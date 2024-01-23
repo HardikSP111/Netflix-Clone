@@ -1,0 +1,993 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz@6..12&family=Plus+Jakarta+Sans&family=Poppins:wght@900&family=Roboto:wght@900&family=Rubik&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700;6..12,800;6..12,900&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     /* overflow-x: hidden; */
+     /* font-family: Nunito Sans; */
+     /* color: white; */
+}
+
+body{
+     overflow-x: hidden;
+}
+
+img{
+     max-width: 100%;
+}
+
+.container-1{
+     background-image: url("/Material/netflix.jpg");
+     width: 100vw;
+     height: 100vh;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+
+.container-1-1{
+     width: 100vw;
+     height: 100vh;
+     /* background-color: black; */
+     background-image: linear-gradient(to top right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.container-1-2{
+     width: 100vw;
+     height: 100vh;
+     /* background-color: black; */
+     background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* NAVBAR */
+.nav-bar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 0.75rem;
+     padding-left: 3rem;
+     padding-right: 3rem;
+}
+
+.nav-btns{
+     display: flex;
+     align-items: center;
+}
+
+#co-name{
+     font-size: 50px;
+     font-family: Bebas Neue;
+     color: #E50914;
+     font-weight: 700;
+     letter-spacing: 0.1rem;
+}
+
+.lang-select{
+     padding-inline: 0.5rem;
+     display: flex;
+     align-items: center;
+     border: 1px solid #9B9C9E;
+     border-radius: 0.25rem;
+}
+
+#lang{
+     padding-inline: 0.25rem;
+     padding-block: 0.25rem;
+     outline: none;
+     border: none;
+     background-color: transparent;
+     color: white;
+     font-size: 16px;
+     font-family: Nunito Sans;
+     /* text-align: center; */
+}
+
+#lang-icon{
+     color: white;
+     font-size: 16px;
+     padding-left:0.35rem;
+}
+
+.sign-btn{
+     padding: 0.5rem;
+}
+
+#sign-in{
+     padding-inline: 1rem;
+     padding-block: 0.40rem;
+     background-color: red;
+     color: white;
+     border-radius: 0.25rem;
+     border: none;
+     font-size: 14px;
+     font-family: Nunito Sans;
+     font-weight: bold;
+}
+
+#sign-in:hover{
+     background-color: #C11119;
+     transition: 0.3s all;
+     cursor: pointer;
+}
+
+.opt{
+     color: black;
+     text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* CONTENT */
+.main-content{
+     display: inline-flex;
+     flex-direction: column;
+     position: relative;
+     top: 20%;
+     left:10%;
+     /* overflow: hidden; */
+}
+
+#content-1{
+     color: white;
+     font-family: Poppins;
+     font-weight: 900;
+     font-size: 54px;
+}
+
+#content-2{
+     color: white;
+     font-family: Nunito Sans;
+     /* font-weight: 900; */
+     font-size: 20px;
+     /* letter-spacing: 1px; */
+     margin-top: 1rem;
+}
+
+#content-3{
+     color: #9B9C9E;
+     font-family: Nunito Sans;
+     font-size: 16px;
+     margin-top: 2.5rem;
+     font-weight: 400;
+}
+
+.sub-content-3{
+     display: flex;
+     margin-top: 1rem;
+}
+
+#email{
+     font-family: Nunito Sans;
+     font-size: 16px;
+     padding: 1rem;
+     width: 350px;
+     background-color: transparent;
+     border: 1px solid white;
+     border-radius: 0.25rem;
+     color: white;
+}
+
+.get-started{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #E50914;
+     border-radius: 0.25rem;
+     border: none;
+     margin-left: 0.5rem;
+     transition: all 0.2s ease-in-out;
+}
+
+#get-started-btn{
+     font-family: Nunito Sans;
+     font-size: 22px;
+     padding-left: 1.75rem;
+     border: none;
+     background-color: transparent;
+     color: white;
+     font-weight: 700;
+     transition: all 0.2s ease-in-out;
+}
+
+.get-started:hover{
+     background-color: #C11119;
+     transition: all 0.2s ease-in-out;
+     cursor: pointer;
+}
+
+#get-started-btn:hover{
+     cursor: pointer;
+     transition: all 0.2s ease-in-out;
+}
+
+#get-started-icon{
+     padding-inline:1rem;
+     color: white;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* RED LINE */
+.container-2{
+     /* background-color: black; */
+     overflow: hidden;
+     position: relative;
+     width: 100vw;
+     margin-top: -4rem;
+     border-top: 5px solid #C11119;
+     border-radius: 50%;
+     box-shadow: rgba(72, 135, 202, 0.8) 0px 30px 130px 20px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* CARDS */
+.container-3{
+     background-color: black;
+     /* height: 100vh; */
+     /* border: 1px solid green; */
+     padding-inline: 8%;
+}
+
+.container-3-1{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     /* border: 1px solid red; */
+     /* overflow: hidden; */
+}
+
+.plan-cards{
+     margin-top: 5rem;
+     /* border: 1px solid yellow; */
+     /* overflow: hidden; */
+}
+
+.plan-card-title, .trending, .poster-list, .game, .FAQ-title{
+     color: white;
+     font-family: Nunito Sans;
+     font-size: 26px;
+     /* letter-spacing: 1px; */
+     margin-left: 2rem;
+}
+
+.cards{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+.card-c{
+     background-image: linear-gradient(to bottom, #6A1E40, rgb(31, 5, 16));
+     height: 220px;
+     width: 280px;
+     position: relative;
+     border-radius: 5%;
+     font-family: Nunito Sans;
+     color: white;
+     padding: 0.5rem;
+     margin: 0.5rem;
+}
+
+.card-title, .card-text, .card-amount, .join-title{
+     position: absolute;
+     left: 2rem;
+     font-weight: bolder;
+}
+
+.card-title{
+     top: 2rem;
+     font-size: 22px;
+     letter-spacing: 1px;
+}
+
+.card-text{
+     top: 5rem;
+     padding-right: 1rem;
+     color: #9B9C9E;
+     font-size: 18px;
+}
+
+.card-amount{
+     bottom: 2rem;
+     color: #cbd1df;
+     font-size: 18px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* TRENDING NOW */
+/* .container-3-2{
+     border: 1px solid red;
+     margin-top: 3rem;
+}
+
+.container-3-2-1{
+     border: 1px solid yellow;
+}
+*/
+
+.trending, .poster-list{
+     margin-top: 2rem;
+}
+
+.trending-opt{
+     /* padding-inline: 0.5rem;
+     align-items: center;
+     border: 1px solid #9B9C9E;
+     border-radius: 0.25rem; */
+     margin-top: 0.5rem;
+}
+
+.trending-sel{
+     border-radius: 0.25rem;
+     padding-inline: 0.5rem;
+     padding-block: 0.5rem;
+     color: white;
+     font-size: 16px;
+     font-family: Nunito Sans;
+     background-color: #0F0F0F;
+}
+
+.opt-1{
+     color: black;
+     text-align: left;
+     background-color: white;
+}
+
+.trending-opt select:focus {
+     outline: 2px solid white;
+ }
+
+ /* POSTER */
+
+.new{
+     display: flex;
+     justify-content: center;
+}
+
+.poster-list{
+     margin-top: 1rem;
+     display: flex;
+     overflow-x: auto;
+}
+
+.poster-list::-webkit-scrollbar{
+     width: 0;
+}
+
+.poster{
+     margin: 1.5rem;
+     min-width: 180px;
+     height: 250px;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-image: url("/Material/netflix.jpg");
+     border-radius: 5%;
+     position: relative;
+     transition: all 0.2s ease-in-out;
+}
+
+#poster-1, #poster-3, #poster-4{
+     background-image: url("/Material/poster-1.png");
+}
+
+#poster-2{
+     background-image: url("/Material/poster-2.jpg");
+}
+
+#poster-5{
+     background-image: url("/Material/poster-5.png");
+}
+
+#poster-6{
+     background-image: url("/Material/poster-6.jpg");
+}
+
+#poster-7{
+     background-image: url("/Material/poster-7.png");
+}
+
+#poster-8{
+     background-image: url("/Material/poster-8.png");
+}
+
+#poster-9{
+     background-image: url("/Material/poster-9.png");
+}
+
+#poster-10{
+     background-image: url("/Material/poster-10.png");
+}
+
+.poster:hover{
+     cursor: pointer;
+     transform: scale(1.050);
+     transition: all 0.2s ease-in-out;
+}
+
+.serial-no{
+     position: absolute;
+     bottom: 0rem;
+     left: -1rem;
+     font-size: 104px;
+     color: black;
+     font-family: Ubuntu;
+     -webkit-text-stroke-width: 1px; 
+     -webkit-text-stroke-color: white; 
+     text-shadow: 0 0 1.5rem rgba(0,0,0,0.5); /*left-right, top-bottom, spreadness, color*/
+}
+
+/* GAME POSTER */
+.game{
+     /* border: 1px solid green; */
+     margin-top: 2rem;
+}
+
+.game-poster{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     /* border: 1px solid yellow; */
+     width: 100%;
+     background-image: linear-gradient(to right, #4a152d,#221018, rgb(21, 5, 12));
+     border-radius: 20px;
+     /* height: 50vh; */
+     margin-top: 0.5rem;
+}
+
+.game-img{
+     background-position: center;
+     background-size: auto;
+     background-repeat: no-repeat;
+     background-image: url("/Material/game-poster.png");
+     /* border: 1px solid red; */
+     height: 350px;
+     width: 50%;
+     border-radius: 20px;
+}
+
+.game-content{
+     width: 85%;
+}
+
+#game-content-title{
+     font-size: 30px;
+     font-family: Poppins;
+}
+
+#game-content-subtext{
+     margin-top: 1rem;
+     font-size: 16px;
+     color: #9B9C9E;
+     letter-spacing: normal;
+}
+
+.game-text{
+     padding: 0 5rem 0 3rem;
+}
+
+/* JOIN CARDS */
+.join-c{
+     background-image:   linear-gradient(140deg, #1A2042, rgb(31, 5, 16));
+     height: 260px;
+     width: 280px;
+     position: relative;
+     border-radius: 5%;
+     font-family: Nunito Sans;
+     color: white;
+     padding: 0.5rem;
+     margin: 0.5rem;
+}
+
+.join-title{
+     left: 1rem;
+     top: 2rem;
+     font-size: 30px;
+     letter-spacing: 1px;
+     padding-right: 0.5rem;
+     font-weight: 900;
+}
+
+.join-text{
+     position: absolute;
+     bottom: 2rem;
+     right: 2rem;
+}
+
+#ic-1, #ic-2, #ic-3, #ic-4{
+     font-size: 50px;
+     background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.join-cards{
+     margin-top: 4rem;
+}
+
+/* FREQUENTLY ASKED QUESTIONS */
+.container-FAQ{
+     margin-top: 3rem;
+     /* border: 1px solid white; */
+}
+
+.FAQ{
+     display: flex;
+     flex-direction: column;
+     margin: 0.5rem 0 0 2rem;
+     /* border: 1px solid white; */
+}
+
+.questions{
+     background-color: #2D2D2D;
+     padding: 1rem 0 1rem 2rem;
+     margin-block: 0.3rem;
+     display: flex;
+     height: 50px;
+     flex-direction: column;
+     transition: all 0.2s ease-in-out;
+     overflow: hidden;
+     position: relative;
+     /* border: 1px solid white; */
+     width: 70%;
+}
+
+.inner-ques{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     /* border: 1px solid white; */
+     /* border-bottom: 1px solid white; */
+}
+
+.ques-ans{
+     position: absolute;
+     top: 5rem;
+     padding-right: 1rem;
+     font-size: 24px;
+     color: white;
+     font-family: Nunito Sans;
+     font-weight: 400;
+     /* border-top: 1px solid white; */
+     /* border: 1px solid white; */
+}
+
+.questions:hover{
+     cursor: pointer;
+     background-color: #414141;
+     transition: all 0.2s ease-in-out;
+}
+
+.ques-title{
+     font-size: 24px;
+     color: white;
+     font-family: Nunito Sans;
+     font-weight: 500;
+     margin-top: 0.5rem;
+}
+
+#ques-1, #ques-2, #ques-3, #ques-4, #ques-5, #ques-6{
+     transition: all 0.2s ease-in-out;
+}
+
+#ques-add-1, #ques-add-2, #ques-add-3, #ques-add-4, #ques-add-5, #ques-add-6{
+     font-size: 50px;
+     color: white;
+     font-weight: 100;
+     margin-right: 1rem;
+     transition: all 0.2s ease-in-out;
+}
+
+/* LAST MEMBERSHIP DETAILS */
+.last-content{
+     color: #9B9C9E;
+     font-family: Nunito Sans;
+     font-size: 18px;
+     font-weight: bold;
+     margin: 2.5rem 0 0 2rem;
+     width: 74%;
+     /* border: 1px solid white; */
+}
+
+.sub-last-content{
+     display: flex;
+     margin-top: 1rem;
+}
+
+#last-email{
+     font-family: Nunito Sans;
+     font-size: 16px;
+     padding: 1rem;
+     font-weight: bold;
+     width: 70%;
+     background-color: transparent;
+     border-radius: 0.25rem;
+     color: white;
+     border: 1px solid white;
+}
+
+.get-started{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #E50914;
+     border-radius: 0.25rem;
+     border: none;
+     margin-left: 0.5rem;
+}
+
+#get-started-btn{
+     font-family: Nunito Sans;
+     font-size: 22px;
+     padding-left: 1.75rem;
+     border: none;
+     background-color: transparent;
+     color: white;
+     font-weight: 700;
+}
+
+#get-started-icon{
+     padding-inline:1rem;
+     color: white;
+}
+
+/* FOOTER */
+.footer{
+     color: #9B9C9E;
+     font-family: Nunito Sans;
+     margin: 5rem 0 0 4rem;
+     font-weight: bold;
+     /* border: 1px solid white; */
+}
+
+ul{
+     list-style: none;
+}
+
+.footer-links{
+     display: flex;
+     justify-content: space-between;
+     margin: 1rem 0 0 0;
+     flex-wrap: wrap;
+     /* border: 1px solid white; */
+     width: 80%;
+}
+
+.link-section{
+     /* margin: 1rem 10rem 0 0; */
+     /* border: 1px solid white; */
+}
+
+.link-section li{
+     padding-block: 0.3rem;
+     font-size: 15px;
+}
+
+.link-section li a{
+     color: #9B9C9E;
+     text-decoration: underline;
+}
+
+.footer-lang-select{
+     padding-inline: 0.5rem;
+     display: flex;
+     align-items: center;
+     border: 1px solid #9B9C9E;
+     border-radius: 0.25rem;
+     margin-top: 5rem;
+     background-color: #0F0F0F;
+     /* width: 10%; */
+}
+
+#footer-lang{
+     padding-inline: 0.25rem;
+     padding-block: 0.25rem;
+     outline: none;
+     border: none;
+     color: white;
+     background-color: transparent;
+     font-size: 16px;
+     font-family: Nunito Sans;
+     /* text-align: center; */
+}
+
+#footer-co-name{
+     color: #9B9C9E;
+     font-size: 16px;
+     font-family: Nunito Sans;
+     margin: 3rem 0 5rem 0;
+}
+
+.footer-btns{
+     display: flex;
+     align-items: center;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* MEDIA QUERIES */
+
+@media(max-width:1000px)
+{
+     .game-poster{
+          flex-direction: column;
+     }    
+
+     .game-img{
+          height: 200px;
+          /* width: 50%; */
+          align-self: flex-end;
+          border-radius: 0;
+          margin-top: 2rem;
+     }    
+
+     .game-content{
+          align-self: flex-start;
+     }
+}
+
+@media(max-width : 950px){
+     .game-img{
+          width: 60%;
+     }
+}
+
+@media(max-width : 800px){
+     .game-img{
+          width: 80%;
+     }
+}
+
+@media(max-width : 740px){
+     .questions{
+          width: 100%;
+     }
+
+     .FAQ, .FAQ-title{
+          margin-left: 0;
+     }
+
+     .FAQ{
+          margin: 0 2rem 0 0;
+     }
+}
+
+@media(max-width : 700px){
+     .sub-content-3{
+          flex-direction: column;
+          align-items: flex-start;
+     }
+
+     .sub-last-content{
+          flex-direction: column;
+          align-items: flex-start;
+     }
+
+     .get-started{
+          padding-block: 0.5rem;
+          margin-left: 0;
+          margin-top: 0.5rem;
+     }
+
+     .main-content{
+          top: 10%;
+     }
+}
+
+ @media(max-width : 680px){
+     .main-content{
+          width: 80%;
+     }
+
+     .main-content #content-1{
+          font-size: 35px;
+     }
+
+     .game-img{
+          width: 100%;
+     }
+}
+
+@media(max-width : 500px){
+     .ques-ans{
+          margin-top: 3rem;
+     }
+}
+
+@media(max-width : 450px){
+     .nav-bar{
+          flex-direction: column;
+     }
+
+     .main-content{
+          top:5%;
+     }
+
+     .main-content #content-3{
+          margin-top:5%;
+     }
+
+     #email{
+          width: 300px;
+     }
+
+     #last-email{
+          width: 280px;
+     }
+}
+
+@media(max-width : 400px){
+     .main-content{
+          font-size: 16px;
+     }
+
+     #get-started-btn{
+          font-size: 20px;
+     }
+
+     .footer{
+          margin: 5rem 0 0 2rem;
+     }
+}
+
+@media(max-width : 380px){
+
+     #email{
+          width: 200px;
+     }
+
+     #last-email{
+          width: 200px;
+     }
+
+     .get-started{
+          padding-block: 0.5rem;
+          margin-left: 0rem;
+          margin-top: 0.5rem;
+     }
+
+     #get-started-btn{
+          font-size: 16px;
+     }
+
+     .main-content #content-1{
+          font-size: 28px;
+     }
+
+     .main-content #content-2{
+          font-size: 20px;
+     }
+
+     .main-content #content-3{
+          margin-top: 1rem;
+          font-size: 16px;
+     }
+}
+
+@media(max-width : 320px){
+
+     #email{
+          width: 200px;
+     }
+
+     #last-email{
+          width: 200px;
+     }
+
+     .get-started{
+          padding-block: 0rem;
+          margin-left: 0rem;
+          margin-top: 0.5rem;
+     }
+
+     #get-started-btn{
+          font-size: 14px;
+          padding: 0.5rem;
+     }
+
+     .main-content #content-1{
+          font-size: 24px;
+     }
+
+     .main-content #content-2{
+          font-size: 16px;
+     }
+
+     .main-content #content-3{
+          margin-top: 1rem;
+          font-size: 14px;
+     }
+
+     #co-name{
+          font-size: 26px;
+     }
+
+     #lang, #lang-icon, #sign-in{
+          font-size: 12px;
+     }
+
+     #sign-in{
+          font-size: 12px;
+          padding-inline: 0.5rem;
+          padding-block: 0.33rem;
+     }
+}
+
+@media(max-width : 300px){
+     #last-email{
+          width: 180px;
+     }
+}
+
+@media(max-width : 270px){
+
+     #email{
+          width: 150px;
+     }
+
+     #last-email{
+          width: 130px;
+     }
+
+     #lang-icon{
+          display: none;
+     }
+
+     .sub-content-3{
+          width: 150px;
+     }
+
+     .sub-last-content{
+          width: 150px;
+     }
+
+     #get-started-icon{
+          padding-inline:0.1rem;
+     }
+
+     #get-started-btn{
+          padding-left:0.5rem;
+     }
+
+     .nav-btns{
+          flex-direction: column;
+     }
+
+     #game-content-title{
+          font-size: 20px;
+     }
+
+     /* .get-started{
+          padding-block: 0rem;
+          margin-left: 0rem;
+          margin-top: 0.5rem;
+     }
+
+     #get-started-btn{
+          font-size: 12px;
+          padding: 0.5rem;
+     }
+
+     .main-content #content-1{
+          font-size: 40px;
+     }
+
+     #get-started-icon{
+          padding-inline:0rem;
+     } */
+}
+
+@media(max-width : 240px){
+     #last-email{
+          width: 100px;
+     }
+}
+
+@media(max-width : 210px){
+     #email{
+          width: 100px;
+     }
+}
+
+@media(max-width : 200px){
+     #game-content-title{
+          font-size: 16px;
+     }
+}
